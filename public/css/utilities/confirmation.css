@@ -416,4 +416,47 @@ article.confirmation-page {
             border: 2px solid var(--clr-primary);
         }
     }
+        article.confirmation-page {
+
+        .confirmation-actions {
+            display: none !important;
+        }
+
+        
+        .success-icon {
+            animation: none !important;
+        }
+
+        
+        .confirmation-header {
+            background-color: white !important;
+            border: 2px solid var(--clr-primary);
+            box-shadow: none !important;
+        }
+
+        
+        .confirmation-title,
+        .confirmation-message,
+        .detail-value,
+        .passenger-value,
+        .step-title,
+        .step-description {
+            color: black !important;
+        }
+
+        .detail-card,
+        .passenger-info-card,
+        .important-info {
+            box-shadow: none !important;
+        }
+
+        .confirmation-content > * {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        body {
+            background: white !important;
+        }
+    }
 }

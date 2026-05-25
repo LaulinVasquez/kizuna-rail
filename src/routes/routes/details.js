@@ -1,11 +1,10 @@
-import { getRouteById, getSchedulesByRoute } from '../models/model.js';
+import { getRouteById, getSchedulesByRoute } from '../../models/model.js';
 
 export default async (req, res) => {
     const { routeId } = req.params;
     const details = await getRouteById(routeId);
     details.schedules = await getSchedulesByRoute(routeId);
-
-    // TODO: getCompleteRouteDetails instead
+    // console.log(details.operatingMonths);
 
     res.render('routes/details', { 
         title: 'Route Details',
